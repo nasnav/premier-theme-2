@@ -1,0 +1,31 @@
+@import '../../sass/colors';
+
+/* name */
+.refinement__name {
+  margin-bottom: 0;
+}
+
+.refinement__nameBtn {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  padding: .5rem 0;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+
+  &[aria-expanded="true"] {
+    .fa-chevron-down {
+      transform: rotateX(180deg);
+    }
+  }
+}

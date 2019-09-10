@@ -1,0 +1,87 @@
+@import '../../sass/colors';
+
+.footer {
+  padding-top: 3rem;
+  position: relative;
+}
+
+/* footer nav */
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer list */
+.footer__list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* column */
+.footer__col {
+  width: 100%;
+  margin-bottom: 1.5rem;
+
+  @media screen and (min-width: 400px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 33.3333%;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 20%;
+  }
+}
+
+/* column list */
+.footerCol__list {
+  padding-left: 0;
+}
+
+/* column link */
+.footerCol__link {
+  color: $black !important;
+
+  &:hover {
+    color: $primary-color !important;
+  }
+}
+
+/* RE Logo */
+.footer__reLogo {
+  align-self: flex-end;
+  right: 0;
+  width: 10rem;
+}
+
+/* copy right */
+.footer__copyRightRibbon {
+  padding: 1rem 0;
+  background-color: #363738;
+  color: #fff;
+  text-align: center;
+
+  .container {
+    @media screen and (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.footer__cr {
+  @media screen and (min-width: 576px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__powered {
+  margin-bottom: 0;
+}
+
+.footer__nasorgLogo {
+  width: 6rem;
+}

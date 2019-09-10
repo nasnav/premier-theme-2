@@ -1,0 +1,141 @@
+@import '../../sass/colors';
+
+/* title */
+.productDetails__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+/* nav */
+.productDetails__nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* nav list */
+.productDetails__navList {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 576px) {
+    width: 100%;
+  }
+}
+
+/* nav item */
+.productDetails__navItem {
+  @media screen and (max-width: 390px) {
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    flex: 0 0 33.3333%;
+  }
+}
+
+.productDetails__navLink {
+  display: block;
+  font-size: .793rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .75rem 0;
+  text-decoration: none !important;
+  color: rgba($color: $black, $alpha: .7);
+  border-bottom: 1.5px solid transparent;
+
+  transition-property: color, border-color;
+  transition-duration: .15s;
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: $black;
+    outline: 0;
+    border-color: $black; 
+  }
+
+  @media screen and (min-width: 360px) {
+    font-size: .9rem;
+  }
+
+  @media screen and (min-width: 390px) {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  @media screen and (min-width: 440px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media screen and (min-width: 500px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* ----- panel */
+.productDetails__panel {
+  padding: 2rem 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 4rem 0;
+  }
+}
+
+/* --- description */
+.productDescription {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+}
+
+.productDescription__textContainer {
+  margin-right: 1rem;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: initial;
+  }
+}
+
+.productDescription__title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.productDescription__desc {
+  text-transform: uppercase;
+  max-width: 25rem;
+  
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 1.1rem;
+  }
+}
+
+.productDescription__img {
+  width: 100%;
+  max-width: 13rem;
+
+  @media screen and (min-width: 768px) {
+    max-width: 22rem;
+  }
+}
